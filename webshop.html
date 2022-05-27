@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Formuleret - keramik</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="author" content="#">
+		<meta name="keywords" content="Keramik, formuleret,">
+		<meta name="description" content="#">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/gga8jft.css">
+
+		<link rel="stylesheet" href="css/webshop.css">
+		<!-- favicon = ikon i faneblad / browser -->
+		  <link rel="icon" type="image/x-icon" href="images/folder.icon.png" />
+	  </head>
+<body>
+	<header>
+		<section id="com">
+			<div class="cart">
+				<a href="kurv.html"> <img src="images/SHOP.png" alt="shop" style="width:1.5rem;"> <span>0</span></a>
+				<img src="images/SEARCH.png" alt="shop" style="width:1.5rem; height: 1.5rem;">
+			</div>
+
+			<div class="flex">
+				<div class="webshop">
+					<a href="webshop.html"><h3>WEBSHOP</h3></a>
+						<div class="dropdown-content">
+							<a href="webshop.html">KOPPER</a>
+							<a href="webshop.html">TALLERKNER</a>
+							<a href="webshop.html">KRUKKER</a>
+							<a href="webshop.html">VASER</a>
+							<a href="webshop.html">SKÅLE OG FADE</a>
+							<a href="webshop.html">SMÅT OG GODT</a>
+						</div>
+				</div>
+				<div class="galleri">
+					<a href="galleri.html"><h3>GALLERI</h3></a>
+						<div class="dropdown-content">
+							<a href="lw.html">LYSVÆLD</a>
+							<a href="anemone.html">ANEMONE</a>
+							<a href="#">UKULTIVERET</a>
+							<a href="#">TANGKROGEN</a>
+							<a href="#">HVERDAG</a>
+							<a href="#">LIMFJORDEN</a>
+							<a href="#">TEKTONIKA</a>
+							<a href="#">TVELYS</a>
+						</div>
+				</div>
+				<div class="logohead"><a href="index.html"><img src="images/logo.sort.png" alt="images/logo.sort.png" style="width:100%;"></a></div>
+				<div class="om"><a href="om.html"><h3>OM MIG</h3></a></div>
+				<div class="kontakt"><a href="kontakt.html"><h3>KONTAKT</h3></a></div>
+			</div>
+		</section>
+
+		<section id="mobil">
+						<!-- Burgermenuens overlay -->
+			<div id="myNav" class="overlay">
+
+				<!-- Button til at lukke menuen med -->
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/cross.png" alt="close" style="width: 1.5rem;"></a>
+
+				<!-- Overlay content -->
+				<div class="overlay-content">
+					<a class="menupunkter" href="#"><h4>WEBSHOP</h4></a>
+						<div class="content">
+							<a href="webshop.html">KOPPER</a>
+							<a href="webshop.html">TALLERKNER</a>
+							<a href="webshop.html">KRUKKER</a>
+							<a href="webshop.html">VASER</a>
+							<a href="webshop.html">SKÅLE OG FADE</a>
+							<a href="webshop.html">SMÅT OG GODT</a>
+						</div>
+					<a class="menupunkter" href="#"><h4>GALLERI</h4></a>
+						<div class="content">
+							<a href="galleri.html">SE ALLE</a>
+							<a href="lw.html">LYSVÆLD</a>
+							<a href="anemone.html">ANEMONE</a>
+							<a href="#">UKULTIVERET</a>
+							<a href="#">TANGKROGEN</a>
+							<a href="#">HVERDAG</a>
+							<a href="#">LIMFJORDEN</a>
+							<a href="#">TEKTONIKA</a>
+							<a href="#">TVELYS</a>
+						</div>
+					<a class="menupunkter" href="om.html"><h4>OM MIG</h4></a>
+					<a class="menupunkter" href="kontakt.html"><h4>KONTAKT</h4></a>
+				</div>
+				<div class="logohead3"><a href="index.html"><img src="images/logo.hands.png" alt="logo.hands" style="width: 4rem;"></a></div>
+
+			</div>
+
+			<section class="head">
+				<!-- Span til at vise/åbne menuen -->
+				<div id="menuikon">
+					<span onclick="openNav()" class="menuikon"><img src="images/menu.png" alt="menu.png" style="width: 1.3rem;"></span>
+				</div>
+
+				<div class="logohead2"><a href="index.html"><img src="images/logo.hands.png" alt="logo.hands" style="width: 4rem;"></a></div>
+
+				<div class="cart2">
+					<a href="kurv.html"> <img src="images/SHOP.png" alt="shop" style="width: 1.3rem;"> <span>0</span></a>
+					<img src="images/SEARCH.png" alt="shop" style="width: 1.3rem; height: 1.3rem;">
+				</div>
+
+			</section>
+		</section>
+	</header>
+	<main>
+
+		<h1>WEBSHOP</h1>
+
+		<section id="webshop">
+			<div class="oversigt">
+				<li>
+					<button class="kopper"><a href="#"><h4>KOPPER</h4></a></button>
+						<div class="content">
+							<a href="#dpk"><p>DEN PERSONLIGE KOP</p></a>
+							<a href="#tektonika"><p>TEKTONIKA KOPPER</p></a>
+							<a href="#gulekopper"><p>GULE KOPPER</p></a>
+							<a href="#stempelkande"><p>STEMPELKANDE KOP</p></a>
+							<a href="#lattekrus"><p>CAFÈ LATTE KRUS</p></a>
+							<a href="#tvelyskopper"><p>TVELYSKOPPER</p></a>
+							<a href="#vesterhavskopper"><p>VESTERHAVSKOPPER</p></a>
+						</div>
+					<a href="404.html"><h4>TALLERKNER</h4></a>
+					<a href="404.html"><h4>KRUKKER</h4></a>
+					<a href="404.html"><h4>VASER</h4></a>
+					<a href="404.html"><h4>SKÅLE OG FADE</h4></a>
+					<a href="404.html"><h4>SMÅT OG GODT</h4></a>
+					<a href="404.html"><h4>GAVER</h4></a>
+				</li>
+
+			</div>
+
+			<section id="kopper">
+				<section id="dpk">
+					<h3>DEN PERSONLIGE KOP</h3>
+					<section class="row3">
+						<div class="products1">
+							<div class="image">
+								<a href="produkt.html"><img src="images/webshop/pkgroen.jpg" alt="pkgroen" style="width:100%;"></a>
+								<div class="figcaption">
+									<h5>GRØN</h5>
+									<div class="pris"><h5>320.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart1" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products2">
+							<div class="image">
+								<img src="images/webshop/pksort.jpg" alt="pksort" style="width:100%;">
+								<div class="figcaption">
+									<h5>SORT</h5>
+									<div class="pris"><h5>320.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart2" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products3">
+							<div class="image">
+								<img src="images/webshop/pkblaa.jpg" alt="pkblaa" style="width:100%;">
+								<div class="figcaption">
+									<h5>BLÅ</h5>
+									<div class="pris"><h5>320.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart3" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+					</section>
+
+					<div class="products4">
+						<div class="image">
+							<img src="images/webshop/dobbelthank.jpg" alt="dobbelthank" style="width:100%;">
+							<div class="figcaption">
+								<h5>DOBBELTHANK // GRØN</h5>
+								<div class="pris"><h5>350.00 KR</h5></div>
+							</div>
+							<a class="add-cart cart4" href="#"><p>+ Tilføj til kurv</p></a>
+						</div>
+					</div>
+
+					<div class="products5">
+						<div class="image">
+							<img src="images/webshop/pksort1.jpg" alt="pksort1" style="width:100%;">
+							<div class="figcaption">
+								<h5>SORT</h5>
+								<div class="pris"><h5>320.00 KR</h5></div>
+							</div>
+							<a class="add-cart cart4" href="#"><p>+ Tilføj til kurv</p></a>
+						</div>
+					</div>
+
+					<section class="row2">
+						<div class="products6">
+							<div class="image">
+								<img src="images/webshop/pkgron.jpg" alt="pkgron" style="width:100%;">
+								<div class="figcaption">
+									<h5>GRØN</h5>
+									<div class="pris"><h5>320.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart1" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products7">
+							<div class="image">
+								<img src="images/webshop/pkbla.jpg" alt="pkbla" style="width:100%;">
+								<div class="figcaption">
+									<h5>SORT</h5>
+									<div class="pris"><h5>320.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart2" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+					</section>
+
+					<div class="products4">
+						<div class="image">
+							<img src="images/webshop/pkgronbla.jpg" alt="pkgronbla" style="width:100%;">
+							<div class="figcaption">
+								<h5>GRØN//BLÅ</h5>
+								<div class="pris"><h5>300.00 KR</h5></div>
+							</div>
+							<a class="add-cart cart4" href="#"><p>+ Tilføj til kurv</p></a>
+						</div>
+					</div>
+
+				</section>
+
+				<section id="tektonika">
+					<h3>TEKTONIKA KOPPER</h3>
+					<div class="products8">
+							<img src="images/webshop/tektonika.jpg" alt="tektonika" style="width:100%;">
+					</div>
+
+					<section class="row3-2">
+						<div class="products1-2">
+							<div class="image">
+								<div class="img">
+								<img src="images/webshop/blatt.jpg" alt="blatt" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>BLÅ</h5>
+									<div class="pris"><h5>320.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart1" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products2-2">
+							<div class="image">
+								<div class="img">
+								<img src="images/webshop/teksand.jpg" alt="teksand" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>SAND</h5>
+									<div class="pris"><h5>320.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart2" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products3-2">
+							<div class="image">
+								<div class="img">
+								<img src="images/webshop/bruntt.jpg" alt="bruntt" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>BRUN</h5>
+									<div class="pris"><h5>340.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart3" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+					</section>
+
+					<section class="row2">
+						<div class="products6">
+							<div class="image">
+								<div class="img2">
+								<img src="images/webshop/sandtt.jpg" alt="sandtt" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>GRØN/BRUN</h5>
+									<div class="pris"><h5>320.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart1" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products7">
+							<div class="image">
+								<div class="img2">
+								<img src="images/webshop/tektyrk.jpg" alt="tektyrk" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>TURKIS</h5>
+									<div class="pris"><h5>280.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart2" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<div class="whitespace"></div>
+
+				<section id="gulekopper">
+					<h3>GULE KOPPER</h3>
+
+					<div class="products8">
+						<img src="images/webshop/gulekopper.jpg" alt="tektonika" style="width:100%;">
+					</div>
+
+					<section class="row2-2">
+						<div class="products6-2">
+							<div class="image">
+								<div class="img2">
+								<img src="images/webshop/gulkork.jpg" alt="gulkork" style="width:100%; height: 100%;">
+								</div>
+								<div class="figcaption">
+									<h5>KORK, UDEN HANK</h5>
+									<div class="pris"><h5>320.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart1" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products7-2">
+							<div class="image">
+								<div class="img2">
+								<img src="images/webshop/gulmedhank.jpg" alt="gulmedhank" style="width:100%; height: 100%;">
+								</div>
+								<div class="figcaption">
+									<h5>HØJ, MED HANK</h5>
+									<div class="pris"><h5>280.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart2" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+				<div class="whitespace"></div>
+
+				<section id="stempelkande">
+					<h3>STEMPELKANDE KOP</h3>
+					<section class="row3-1">
+						<div class="products2-4">
+							<div class="image">
+								<div class="img3">
+								<img src="images/webshop/sksort2.jpg" alt="sksort2" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>SORT</h5>
+									<div class="pris"><h5>200.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart2" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products1-4">
+							<div class="image">
+								<div class="img3">
+								<img src="images/webshop/sksort1.jpg" alt="sksort1" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>SORT</h5>
+									<div class="pris"><h5>200.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart1" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products3-4">
+							<div class="image">
+								<div class="img3">
+								<img src="images/webshop/sksort3.jpg" alt="sksort3" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>SORT</h5>
+									<div class="pris"><h5>200.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart3" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+					</section>
+
+					<section class="row2">
+						<div class="products6">
+							<div class="image">
+								<div class="img2">
+								<img src="images/webshop/skgul1.jpg" alt="skgul1" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>GUL</h5>
+									<div class="pris"><h5>200.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart1" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products7">
+							<div class="image">
+								<div class="img2">
+								<img src="images/webshop/skgul2.jpg" alt="skgul2" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>GUL</h5>
+									<div class="pris"><h5>200.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart2" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+					</section>
+
+					<section class="row2">
+						<div class="products6">
+							<div class="image">
+								<div class="img2">
+								<img src="images/webshop/skgreen1.jpg" alt="skgreen1" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>GRØN</h5>
+									<div class="pris"><h5>200.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart1" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products7">
+							<div class="image">
+								<div class="img2">
+								<img src="images/webshop/skgreen2.jpg" alt="skgreen2" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>GRØN</h5>
+									<div class="pris"><h5>200.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart2" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+				<section id="lattekrus">
+					<h3>CAFÈ LATTE KRUS</h3>
+					<section class="row3-1">
+						<div class="products3-4">
+							<div class="image">
+								<div class="img3-2">
+								<img src="images/webshop/latte1.jpg" alt="latte1" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>SORT//BLÅ</h5>
+									<div class="pris"><h5>230.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart2" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products1-4">
+							<div class="image">
+								<div class="img3-1">
+								<img src="images/webshop/latte2.jpg" alt="latte2" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>GUL</h5>
+									<div class="pris"><h5>230.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart1" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products2-4">
+							<div class="image">
+								<div class="img3-1">
+								<img src="images/webshop/latte3.jpg" alt="latte3" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>GRØN</h5>
+									<div class="pris"><h5>230.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart3" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section id="tvelyskopper">
+					<h3>TVELYSKOPPER</h3>
+					<section class="row2-4">
+						<div class="products10">
+							<div class="image">
+								<div class="img4">
+								<img src="images/webshop/tvelys1.jpg" alt="tvelys1" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>TVELYS KOP</h5>
+									<div class="pris"><h5>340.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart1" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products11">
+							<div class="image">
+								<div class="img4">
+								<img src="images/webshop/tvelys2.jpg" alt="tvelys2" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>TVELYS KOP</h5>
+									<div class="pris"><h5>280.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart2" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+					</section>
+
+					<div class="products9">
+						<div class="image">
+							<img src="images/webshop/tvelys3.jpg" alt="tvelys3" style="width:100%;">
+							<div class="figcaption">
+								<h5>TVELYS KOP</h5>
+								<div class="pris"><h5>340.00 KR</h5></div>
+							</div>
+							<a class="add-cart cart4" href="#"><p>+ Tilføj til kurv</p></a>
+						</div>
+					</div>
+
+				</section>
+
+				<section id="vesterhavskopper">
+					<h3>VESTERHAVSKOPPER</h3>
+
+					<section class="row2-2">
+						<div class="products6-1">
+							<div class="image">
+								<div class="img">
+								<img src="images/webshop/vesterhavskop1.jpg" alt="vesterhavskop1" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>VESTERHAVSKOP</h5>
+									<div class="pris"><h5>340.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart1" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+						<div class="products7-1">
+							<div class="image">
+								<div class="img">
+								<img src="images/webshop/vesterhavskop2.jpg" alt="vesterhavskop2" style="width:100%;">
+								</div>
+								<div class="figcaption">
+									<h5>VESTERHAVSKOP</h5>
+									<div class="pris"><h5>280.00 KR</h5></div>
+								</div>
+								<a class="add-cart cart2" href="#"><p>+ Tilføj til kurv</p></a>
+							</div>
+						</div>
+					</section>
+
+					<div class="products9">
+						<div class="image">
+							<img src="images/webshop/vesterhavskop3.jpg" alt="vesterhavskop3" style="width:100%;">
+							<div class="figcaption">
+								<h5>VESTERHAVSKOP</h5>
+								<div class="pris"><h5>340.00 KR</h5></div>
+							</div>
+							<a class="add-cart cart4" href="#"><p>+ Tilføj til kurv</p></a>
+						</div>
+					</div>
+
+				</section>
+
+				<div class="toppen">
+				<a href="#webshop"><p> GÅ TIL TOPPEN </p></a>
+				</div>
+
+			</section>
+		</section>
+
+	</main>
+
+	<footer>
+		<section id="footer">
+			<div class="links">
+				<a href="om.html"><p>Om mig</p></a>
+				<a href="kontakt.html"><p>Kontakt</p></a>
+				<a href="kontakt.html"><p>Levering og returnering</p></a>
+				<a href="webshop.html"><p>Gavekort</p></a>
+			</div>
+			<div class="logofoot">
+				<div class="billede"><img src="images/logo.hvid.png" alt="images/logo.sort.png" style="width:100%;"></div>
+			</div>
+			<div class="some">
+				<a href="#"><img src="images/facebook_hvid.png" alt="facebook" style="width:2.8rem;"></a>
+				<a href="#"><img src="images/insta_hvid.png" alt="instagram" style="width:2.8rem;  padding-top: 1rem;"></a>
+				<a href="#"><img src="images/mail_hvid.png" alt="mail" style="width:2.8rem; padding-top: 1rem;"></a>
+			</div>
+		</section>
+
+		<p id=copyright> &copy; Copyright 2021, Alle rettigheder forbeholdes.</p>
+
+	</footer>
+
+	<script src="js/webshop.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/headerogfooter.js"></script>
+
+</body>
+</html>

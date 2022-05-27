@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Formuleret - keramik</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="author" content="#">
+		<meta name="keywords" content="Keramik, formuleret,">
+		<meta name="description" content="#">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/gga8jft.css">
+
+		<link rel="stylesheet" href="css/kontakt.css">
+		<!-- favicon = ikon i faneblad / browser -->
+		  <link rel="icon" type="image/x-icon" href="images/folder.icon.png" />
+	  </head>
+<body>
+	<header>
+		<section id="com">
+			<div class="cart">
+				<a href="kurv.html"> <img src="images/SHOP.png" alt="shop" style="width:1.5rem;"> <span>0</span></a>
+				<img src="images/SEARCH.png" alt="shop" style="width:1.5rem; height: 1.5rem;">
+			</div>
+
+			<div class="flex">
+				<div class="webshop">
+					<a href="webshop.html"><h3>WEBSHOP</h3></a>
+						<div class="dropdown-content">
+							<a href="webshop.html">KOPPER</a>
+							<a href="webshop.html">TALLERKNER</a>
+							<a href="webshop.html">KRUKKER</a>
+							<a href="webshop.html">VASER</a>
+							<a href="webshop.html">SKÅLE OG FADE</a>
+							<a href="webshop.html">SMÅT OG GODT</a>
+						</div>
+				</div>
+				<div class="galleri">
+					<a href="galleri.html"><h3>GALLERI</h3></a>
+						<div class="dropdown-content">
+							<a href="galleri.html">SE ALLE</a>
+							<a href="lw.html">LYSVÆLD</a>
+							<a href="anemone.html">ANEMONE</a>
+							<a href="#">UKULTIVERET</a>
+							<a href="#">TANGKROGEN</a>
+							<a href="#">HVERDAG</a>
+							<a href="#">LIMFJORDEN</a>
+							<a href="#">TEKTONIKA</a>
+							<a href="#">TVELYS</a>
+						</div>
+				</div>
+				<div class="logohead"><a href="index.html"><img src="images/logo.sort.png" alt="images/logo.sort.png" style="width:100%;"></a></div>
+				<div class="om"><a href="om.html"><h3>OM MIG</h3></a></div>
+				<div class="kontakt"><a href="kontakt.html"><h3>KONTAKT</h3></a></div>
+			</div>
+		</section>
+
+		<section id="mobil">
+						<!-- Burgermenuens overlay -->
+			<div id="myNav" class="overlay">
+
+				<!-- Button til at lukke menuen med -->
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/cross.png" alt="close" style="width: 1.5rem;"></a>
+
+				<!-- Overlay content -->
+				<div class="overlay-content">
+					<a class="menupunkter" href="#"><h4>WEBSHOP</h4></a>
+						<div class="content">
+							<a href="webshop.html">KOPPER</a>
+							<a href="webshop.html">TALLERKNER</a>
+							<a href="webshop.html">KRUKKER</a>
+							<a href="webshop.html">VASER</a>
+							<a href="webshop.html">SKÅLE OG FADE</a>
+							<a href="webshop.html">SMÅT OG GODT</a>
+						</div>
+					<a class="menupunkter" href="#"><h4>GALLERI</h4></a>
+						<div class="content">
+							<a href="lw.html">LYSVÆLD</a>
+							<a href="anemone.html">ANEMONE</a>
+							<a href="#">UKULTIVERET</a>
+							<a href="#">TANGKROGEN</a>
+							<a href="#">HVERDAG</a>
+							<a href="#">LIMFJORDEN</a>
+							<a href="#">TEKTONIKA</a>
+							<a href="#">TVELYS</a>
+						</div>
+					<a class="menupunkter" href="om.html"><h4>OM MIG</h4></a>
+					<a class="menupunkter" href="kontakt.html"><h4>KONTAKT</h4></a>
+				</div>
+				<div class="logohead3"><a href="index.html"><img src="images/logo.hands.png" alt="logo.hands" style="width: 4rem;"></a></div>
+
+			</div>
+
+			<section class="head">
+				<!-- Span til at vise/åbne menuen -->
+				<div id="menuikon">
+					<span onclick="openNav()" class="menuikon"><img src="images/menu.png" alt="menu.png" style="width: 1.3rem;"></span>
+				</div>
+
+				<div class="logohead2"><a href="index.html"><img src="images/logo.hands.png" alt="logo.hands" style="width: 4rem;"></a></div>
+
+				<div class="cart2">
+					<a href="kurv.html"> <img src="images/SHOP.png" alt="shop" style="width: 1.3rem;"> <span>0</span></a>
+					<img src="images/SEARCH.png" alt="shop" style="width: 1.3rem; height: 1.3rem;">
+				</div>
+
+			</section>
+		</section>
+	</header>
+
+		<section class="overskrift_kontakt">
+			<h1> KONTAKT</h1>
+			<!--Kontaktformular-->
+			<!--Kode hentet fra https://www.w3schools.com/howto/howto_css_contact_section.asp -->
+		<section id="kontakt">
+			<div class="container2">
+				<form action="action_page.php">
+					<div class="kontakt_row">
+						<div class="bum">
+							<label for="navn">Navn</label>
+							<input type="text" id="navn" name="navn" >
+						</div>
+
+						<div class="bum">
+							<label for="mail">Email</label>
+							<input type="text" id="mail" name="mail" >
+						</div>
+
+						<div class="bum">
+							<label for="emne">Emne</label>
+							<select id="emne" name="emne">
+								<option value="start">Vælg</option>
+								<option value="spoergsmaal">Spørgsmål til produkter</option>
+								<option value="reklamation">Reklamation</option>
+								<option value="returlevering">Retur og levering</option>
+								<option value="andet">Andet</option>
+							</select>
+						</div>
+					</div>
+
+					<label class="beskedlabel" for="besked"> <p>Besked</p></label>
+					<textarea id="besked" name="besked"></textarea>
+					<input type="submit" value="SEND BESKED">
+
+				</form>
+			</div>
+		</section>
+			</section>
+
+			<!--Nyhedsbrev-->
+
+			<!--Kode hentet fra https://www.w3schools.com/howto/howto_css_newsletter.asp-->
+
+		<div class="nyhedsbrev">
+
+						<div class="nyhed1">
+							<div class="row">
+							<h1>TILMELD NYHEDSBREV</h1>
+							<p>Tilmeld dig vores nyhedsbrev
+								Og hver den første til at høre
+								om nye kollektioner eller få
+								inspiration fra vores nuværende
+								designs. </p>
+						<div class="nyhed_knapper">
+								<input type="text" placeholder="Email address" name="mail" required>
+							</div>
+							<div class="tilmeld">
+								<input class="tilmeld" type="submit" value="TILMELD">
+							</div>
+					</div>
+				</div>
+					<div class="nyhed2">
+						<div class="row">
+							<img class="kopfoto" src="images/kontakt/gul_kop.jpg">
+						</div>
+					</div>
+		</div>
+
+
+
+				<!--Levering og retur-->
+		<section id="levering">
+			<h2>LEVERING & RETURNERING</h2>
+
+			<div class="levering_row">
+				<div class="flex1">
+					<p>
+						Jeg sender med PLS. Fragt er 25 DKK. Der er gratis fragt på ordrer over 500 DKK.
+						<br><br>
+						Der er en forventet levering på 1-3 hverdage.
+						<br><br>
+						Der er mulighed for express levering for +50 DKK.
+						<br><br>
+						Såfremt, at et produkt er beskadiget under transport, skal ovenstående fragtselskab kontaktes, hvorefter der udformes en reklamationssag.
+						Dette er grundet, at fragtselskabet er erstatningsansvarlige for pakkens indhold efter, at pakken overtages af dem.
+						<br><br>
+					</p>
+				</div>
+
+				<div class="flex2">
+					<p class="streg">
+						___________________________
+
+					</p>
+				</div>
+
+				<div class="flex3">
+					<p>
+						Der er 14 dages returret.
+						<br><br>
+						Der er vedlagt et returlabel i pakken. Pakken skal derfor blot afleveres hos nærmeste PLS PakkeShop.
+						<br><br>
+						Efter pakken er modtaget, vil pengene returneres i løbet af 2-5 hverdage. Såfremt der er problemer med dette, skal jeg kontaktes på kontaktformularen ovenfor.
+						<br><br>
+						Jeg svarer på mails i løbet af 1-3 hverdage.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!--Mapbox-->
+	<div class="mapbox">
+		<h2 class="maptitle">FIND BUTIKKEN</h2>
+	</div>
+
+		<!--Kode hentet fra https://blog.duda.co/responsive-google-maps-for-your-website -->
+
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7865.983135633356!2d10.19749776693966!3d56.148184685973604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3f8c5f3a06d3%3A0x177fa85407d9e13!2sFormuleret%20keramik!5e0!3m2!1sda!2sdk!4v1653217560878!5m2!1sda!2sdk"
+			width="800"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+		</iframe>
+	</div>
+
+
+	<footer>
+		<section id="footer">
+			<div class="links">
+				<a href="om.html"><p>Om mig</p></a>
+				<a href="kontakt.html"><p>Kontakt</p></a>
+				<a href="kontakt.html"><p>Levering og returnering</p></a>
+				<a href="webshop.html"><p>Gavekort</p></a>
+			</div>
+			<div class="logofoot">
+				<div class="billede"><img src="images/logo.hvid.png" alt="images/logo.sort.png" style="width:100%;"></div>
+			</div>
+			<div class="some">
+				<a href="#"><img src="images/facebook_hvid.png" alt="facebook" style="width:2.8rem;"></a>
+				<a href="#"><img src="images/insta_hvid.png" alt="instagram" style="width:2.8rem;  padding-top: 1rem;"></a>
+				<a href="#"><img src="images/mail_hvid.png" alt="mail" style="width:2.8rem; padding-top: 1rem;"></a>
+			</div>
+		</section>
+		<p id=copyright> &copy; Copyright 2021, Alle rettigheder forbeholdes.</p>
+	</footer>
+
+
+	<script src="js/main.js"></script>
+	<script src="js/headerogfooter.js"></script>
+
+</body>
+</html>

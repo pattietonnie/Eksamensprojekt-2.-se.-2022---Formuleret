@@ -1,0 +1,899 @@
+/* fonte 
+
+Overskrift - Noto Serif Display:
+font-family: 'Noto Serif Display', serif;
+
+Brødtekst - Houschka Pro Medium:
+font-family: houschka-pro, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Andre tykkelser af brødtekst:
+Houschka Pro Thin:
+font-family: houschka-pro, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+Houschka Pro Light:
+font-family: houschka-pro, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Houschka Pro DemiBold:
+font-family: houschka-pro, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+Houschka Pro Bold:
+font-family: houschka-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Houschka Pro ExtraBold:
+font-family: houschka-pro, sans-serif;
+font-weight: 800;
+font-style: normal;
+
+*/
+
+
+:root {
+	/* farver */
+	--white: #F9F9F9;
+	--black: #271F16;
+	--lightblue: #DFE7F0;
+	--blue: #A1ABC3; 
+	--yellow: #F6D877;
+	--price: #888888;
+	--lightgrey: #E8E8E8;
+  }
+
+  * {
+	  margin: 0;
+	  padding: 0;
+  }
+
+  html {
+	  background-color: var(--white);
+	  margin: auto;
+	  scroll-behavior: smooth;
+  }
+
+
+  /* typografi */
+
+  h1 {
+	  color: var(--black);
+	  font-family: 'Noto Serif Display', serif;
+	  text-align: center;
+	  font-weight: lighter;
+	  font-size: 2.3rem;
+  }
+
+  h2 {
+	color: var(--black);
+	font-family: 'Noto Serif Display', serif;
+	text-align: center;
+	font-weight: lighter;
+  }
+
+  h3 {
+	color: var(--black);
+	font-family: houschka-pro, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  }
+
+  h4 {
+	color: var(--black);
+	font-family: houschka-pro, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 2.3rem;
+	font-size: 1.1rem;
+  }
+
+  h5 {
+	color: var(--price);
+	font-family: houschka-pro, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  }
+
+  p {
+	font-family: houschka-pro, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 0.9rem;
+  }
+
+  header {
+	  margin: 0% 7%;
+	  padding-bottom: 0.5%;
+	  background-color: var(--white);
+  }
+
+  header a {
+	font-size: 0.8rem;
+	text-decoration: none;
+	justify-content: space-between;
+  }
+
+  .cart {
+	display: flex;
+	justify-content:  flex-end;
+	padding-right: 5%;
+	padding-top: 1.3%;
+  }
+
+  .cart a {
+	  padding-right: 1%;
+  }
+
+  .cart span {
+	font-family: houschka-pro, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  }
+
+  .flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0% 5%;
+  }
+
+  .webshop {
+	padding-top: 4%;
+  }
+
+  .galleri {
+	padding-top: 4%;
+  }
+
+  .logohead {
+	width: 13rem;
+	z-index: 1;
+	margin-top: -1.5rem;
+  }
+
+  .om {
+	padding-top: 4%;
+  }
+  
+  .kontakt {
+	padding-top: 4%;
+  } 
+
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	font-family: houschka-pro, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  }
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.webshop:hover .dropdown-content {display: block;}
+
+/* Show the dropdown menu on hover */
+.galleri:hover .dropdown-content {display: block;}
+
+/* MEDIA RULES PÅ COMPUTER */
+@media only screen and (min-width: 600px) {
+	#mobil {
+	  display: none;
+	  }
+
+
+	main {
+		padding-top: 3%;
+		margin: 0% 7%;
+	}
+
+	  #webshop {
+		display: flex;
+		flex-direction: row;
+		padding-top: 3%;
+		transition: 2s ease-in-out;
+	}
+
+	.oversigt {
+		width: 25%;
+		height: 50%;
+		margin-left: 7%;
+		padding-top: 5%;
+		list-style: none;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+	}
+
+	.oversigt button {
+		background-color: var(--white);
+		border: none;
+ 	 }
+
+	.content {
+		display: none;
+		overflow: hidden;
+	}
+
+	.oversigt a {
+		color: var(--black);
+		text-decoration: none;
+		line-height: 1.8rem;
+	}
+
+	.oversigt a:hover {
+		text-decoration: underline;
+	}
+
+	#kopper {
+		display: flex;
+		flex-direction: column;
+		margin: 0% 7%;
+		width: 80%;
+	}
+
+	#dpk {
+		padding: 2% 7%;
+	}
+
+	#tektonika {
+		padding: 2% 7%;
+	}
+
+	#gulekopper {
+		padding: 2% 7%;
+	}
+
+	#stempelkande {
+		padding: 2% 7%;
+	}
+
+	#lattekrus {
+		padding: 2% 7%;
+	}
+
+	#tvelyskopper {
+		padding: 2% 7%;
+	}
+
+	#vesterhavskopper {
+		padding: 2% 7%;
+	}
+
+	/* Dette er til flex af de forskellige billeder, 
+	da computer og mobil versionens opsætning er forskellig fra hinanden */
+	.row2,
+	.row2-2,
+	.row2-3,
+	.row2-4 {
+		display: flex;
+		flex-flow: row;
+		margin: 5% 7%;
+		justify-content: space-around;
+	}
+
+	.row3,
+	.row3-1,
+	.row3-2,
+	.row3-5 {
+		display: flex;
+		flex-flow: row;
+		margin-bottom: 7%;
+		margin-top: 5%;
+		justify-content: space-around;
+	}
+
+	.products1,
+	.products1-2,
+	.products1-4,
+	.products2,
+	.products2-2,
+	.products2-4, 
+	.products3, 
+	.products3-1,
+	.products3-2,
+	.products3-4 {
+		width: 100%;
+	}
+	.products4 {
+		margin-bottom: 10%;
+		margin-top: 10%;
+	}
+	.products5 {
+		width: 50%;
+		margin: 0 auto;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+	.products6,
+	.products6-1,
+	.products6-2,
+	.products7,
+	.products7-1,
+	.products7-2 {
+		width: 50%;
+	}
+	.products8 {
+		width: 100%;
+		padding-top: 5%;
+	}
+	.products9 {
+		width: 35rem;
+		margin: 0 auto;
+		padding-top: 5%;
+	}
+	.products10,
+	.product11 {
+		width: 50%;
+	}
+
+	.img img {
+		width: 15rem;
+  		height: 15rem;
+		object-fit: cover;
+		object-position: 50% 50%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.img2 img {
+		width: 15rem;
+  		height: 20rem;
+		object-fit: cover;
+		object-position: 40% 60%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.img3 img,
+	.img3-1 img {
+		width: 15rem;
+  		height: 20rem;
+		object-fit: cover;
+		object-position: 50% 50%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.img4 img {
+		width: 35rem;
+		height: 14rem;
+		object-fit: cover;
+		object-position: 10% 10%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.figcaption {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.pris {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.image {
+		margin-right: 5%;
+		margin-left: 5%;
+		position: relative;
+	}
+
+	.add-cart {
+		color: var(--black);
+		text-align: end;
+		text-decoration: none;
+	}
+
+	.add-cart:hover {
+		background-color: var(--lightgrey);
+		transition: all 0.3s ease-in-out;
+	}
+
+	.toppen a {
+		text-align: center;
+		text-decoration: none;
+		color: var(--black);
+		padding: 5%;
+	}
+
+	.toppen a:hover {
+		text-align: center;
+		text-decoration: underline;
+		color: var(--black);
+	}
+
+  
+		/* FOOTER */
+  
+	  footer {
+		background-image: url('../images/baggrund2.png');
+		background-repeat: no-repeat;
+		height: 600px;
+	  }
+	
+	  #footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		justify-content: space-around;
+		margin-left: 12%;
+	  }
+	
+	  .links {
+	  display: flex;
+	  flex-direction: column;
+	  color: var(--white);
+	  width: 33%;
+	  margin-top: 20rem;
+	  }
+	
+	  .links a {
+	  color: var(--white);
+	  text-decoration: none;
+	  line-height: 2rem;
+	}
+	
+	  .logofoot {
+	  width: 33%;
+	  margin-top: 20rem;
+	  }
+	
+	  .billede {
+	  width: 15rem;
+	  text-align: center;
+	  }
+	
+	  .some {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-around;
+	  justify-content: space-between;
+	  align-items: center;
+	  width: 33%;
+	  margin-top: 20rem;
+	  }
+  
+	  #copyright{
+		padding-top: 5.5%;
+		text-align: center;
+		color: var(--lightgrey);
+		font-size: 0.5rem;
+	  }
+  }
+  
+  /* MEDIA RULES PÅ MOBIL */
+  @media only screen and (max-width: 600px) {
+	html {
+	  margin: 0 auto;
+	  scroll-behavior: smooth;
+	}
+  
+	#com {
+	  display: none;
+	  visibility: hidden;
+	}
+  
+	/* HEADER */
+	#mobil {
+	  display: visible;
+	  background-color: var(--white);
+	}
+  
+	.head {
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-between;
+	  padding-top: 7%;
+	}
+  
+	#menuikon {
+	  display: flex;
+	  justify-content: flex-start;
+	  width: 20%;
+	}
+  
+	.logohead2 {
+	  display: flex;
+	  justify-content: center;
+	  width: 60%;
+	}
+  
+	.cart2 {
+	  display: flex;
+	  justify-content: flex-end;
+	  width: 20%;
+	  margin-right: -2%;
+	}
+
+	.cart2 span {
+		font-family: houschka-pro, sans-serif;
+		font-weight: 500;
+		font-style: normal;
+	  }
+
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed; 
+      z-index: 1; 
+      left: 0;
+      top: 0;
+      background-color: var(--white); 
+      overflow-x: hidden; 
+      transition: 0.5s;
+    }
+  
+    .overlay-content {
+      position: relative;
+      width: 100%; 
+      padding: 5%;
+      margin-top: 10%;
+    }
+  
+    .overlay-content a {
+      text-decoration: none;
+      font-size: 1rem;
+      line-height: 2.5rem;
+      display: block; 
+      transition: 0.3s; 
+    }
+  
+  
+	.overlay .closebtn {
+	  display: flex;
+	  justify-content: flex-end;    
+	  margin-top: 1.5rem;
+	  margin-right: 2.5rem;
+	}
+  
+	.menupunkter {
+		background-color: var(--white);
+		color: var(--black);
+		border: none;
+	  	display: flex;
+	 	flex-direction: column;
+	}
+  
+	.content {
+		display: none;
+		overflow: hidden;
+	}
+  
+	.content a {
+		font-family: houschka-pro, sans-serif;
+		font-weight: 500;
+		font-style: normal;
+		font-size: 0.8rem;
+		color: var(--price);
+		margin-left: 5%;
+	}
+  
+	.logohead3 {
+	  display: flex;
+	  justify-content: center;
+	  width: 375px;
+	  margin-top: 250px;
+	}
+	/* SLUT HEADER */
+  
+	/* MAIN */
+
+	.oversigt {
+	  display: none;
+	  visibility: hidden;
+	}
+
+	h1 {
+		margin: 5% 0%;
+	}
+
+	#webshop {
+		display: flex;
+		flex-direction: row;
+		margin-top: 10%;
+		transition: 2s ease-in-out;
+	}
+
+	#dkp {
+		margin-top: 15% 0%;	
+	}
+
+	#kopper h3 {
+		line-height: 2.8rem;
+		margin: 1% 5%;
+		padding-top: 10%;
+	}
+
+	.figcaption {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 2%;
+	}
+
+	.pris {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.add-cart {
+		color: var(--black);
+		text-align: end;
+		text-decoration: none;
+		width: 100%;
+	}
+
+	.add-cart p {
+		margin: 2%;
+	}
+
+	.image img {
+		border: 0.4px solid var(--lightgrey);
+	}
+/* Dette er til flex af de forskellige billeder, 
+da computer og mobil versionens opsætning er forskellig fra hinanden */
+	.products1 {
+		width: 100%;
+	}
+	.products1-2 {
+		width: 45%;
+		margin-top: 10%;
+		padding-left: 3%;
+	}
+		.products1-2 img{
+			height: 11rem;
+		}
+	.products1-3 {
+		margin-top: 10%;
+	}
+	.products1-4 {
+		display: flex;
+		justify-content: center;
+	}
+	.products2 {
+		width: 45%;
+		padding-left: 3%;
+		margin-top: 10%;
+	}
+	.products2-2 {
+		width: 45%;
+		margin-top: 10%;
+	}
+		.products2-2 img{
+			height: 11rem;
+		}
+	.products2-4 {
+		display: flex;
+		justify-content: flex-start;
+		margin-left:2%;
+	}
+
+	.products3 {
+		width: 45%;
+		padding-right: 3%;
+		margin-top: 10%;
+	}
+	.products3-1 {
+		padding-right: 3%;
+		margin-top: 10%;
+	}
+	.products3-2 {
+		width: 100%;
+		margin-top: 10%;
+	}
+	.products3-4 {
+		display: flex;
+		justify-content: flex-end;
+		margin-right:2%;
+	}
+	.products4 {
+		margin-top: 10%;
+		margin-bottom: 20%;
+	}
+	.products5 {
+		margin: 10% 0%;
+	}
+	.products6 {
+		width: 45%;
+		padding-left: 3%;
+	}
+	.products6-2 {
+		display: flex;
+		justify-content: center;
+	}
+	.products7 {
+		width: 45%;
+		padding-right: 3%;
+	}
+	.products7-2 {
+		display: flex;
+		justify-content: center;
+	}
+	.products8 {
+		margin: 10% 0%;
+	}
+	.products9, 
+	.products6-1,
+	.products7-1 {
+		width: 100%;
+		margin: 5% 0%;
+	}
+	.products10 {
+		margin: 2%;
+	}
+	.products11 {
+		margin: 2%;
+	}
+
+	.row2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+		.row2-2 {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.row2-3 {
+			display: flex;
+			flex-direction: row;
+		}
+		.row2-4 {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+	.row3 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+		.row3-1 {
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+			justify-content: space-between;
+			margin: 0% 2%;
+		}
+			.row3-1 .figcaption h5 {
+				font-size: 0.6rem;
+			}
+			
+		.row3-2 {
+			display: flex;
+			flex-direction: row-reverse;
+			flex-wrap: wrap;
+		}
+
+	.img2 {
+		height: 11rem;
+		margin-top: 10%;
+	}
+		.img2 img{
+			height: 11rem;
+		}
+
+	.img3 {
+		width: 7rem;
+	}
+		.img3 img,
+		.img3-1 img {
+			width: 2rem;
+			height: 10rem;
+			object-fit: cover;
+			object-position: 40% 60%;
+			position: relative;
+			overflow: hidden;	
+		}
+		.img3-2 img{
+			max-width: 8rem;
+			height: 10rem;
+		}
+
+	.img4 img {
+		width: 100%;
+		height: 10rem;
+		object-fit: cover;
+		object-position: 10% 10%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.whitespace {
+		margin: 20%;
+	}
+
+	.toppen {
+		margin: 15% 0%;
+		scroll-behavior: smooth;
+	}
+	.toppen a {
+		text-align: center;
+		text-decoration: none;
+		color: var(--black);
+	}
+
+	/* SLUT MAIN */
+
+  
+  
+	/* FOOTER */
+  
+	footer {
+	  background-image: url('../images/baggrund2.png');
+	  background-repeat: no-repeat;
+	  height: 600px;
+	  width: 100%;
+	}
+  
+	#footer {
+	  display: flex;
+	  flex-direction: column-reverse;
+	}
+  
+	.some {
+	  display: flex;
+	  flex-direction: row;
+	  padding-top: 40%;
+	  margin: 5% 30%;
+	  justify-content: center;
+	  justify-content: space-between;
+	  align-items: baseline;
+	}
+  
+	.logofoot {
+	  width: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+  
+	.billede{
+	  width: 75%;
+	}
+  
+	.links {
+	  display: flex;
+	  flex-direction: column;
+	}
+  
+	.links a {
+	  color: var(--white);
+	  text-decoration: none;
+	  line-height: 2rem;
+	  text-align: center;
+	}
+  
+	#copyright{
+	  margin-top: 14%;
+	  color: var(--lightgrey);
+	  text-align: center;
+	  font-size: 0.5rem;
+	}
+  
+  }

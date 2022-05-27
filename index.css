@@ -1,0 +1,1110 @@
+/* fonte
+Overskrift - Noto Serif Display:
+font-family: 'Noto Serif Display', serif;
+
+Brødtekst - Houschka Pro Medium:
+font-family: houschka-pro, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Andre tykkelser af brødtekst:
+Houschka Pro Thin:
+font-family: houschka-pro, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+Houschka Pro Light:
+font-family: houschka-pro, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Houschka Pro DemiBold:
+font-family: houschka-pro, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+Houschka Pro Bold:
+font-family: houschka-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Houschka Pro ExtraBold:
+font-family: houschka-pro, sans-serif;
+font-weight: 800;
+font-style: normal;
+
+*/
+
+
+:root {
+	/* farver */
+  --white: #F9F9F9;
+	--black: #271F16;
+	--lightblue: #DFE7F0;
+	--blue: #A1ABC3;
+	--yellow: #F6D877;
+	--price: #888888;
+	--lightgrey: #E8E8E8;
+  }
+
+  * {
+	  margin: 0;
+	  padding: 0;
+  }
+
+  html {
+	  background-color: var(--white);
+    overflow-x: hidden;
+  }
+
+
+  /* typografi */
+
+  h1 {
+	  color: var(--black);
+	  font-family: 'Noto Serif Display', serif;
+	  text-align: center;
+	  font-weight: lighter;
+	  font-size: 2.5rem;
+  }
+
+  h2 {
+	color: var(--white);
+	font-family: 'Noto Serif Display', serif;
+	text-align: center;
+	font-weight: lighter;
+  }
+
+  h3 {
+	color: var(--black);
+	font-family: 'houschka-pro', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  text-align: center;
+  }
+
+  h4 {
+    color: var(--black);
+    font-family: 'houschka-pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 2.3rem;
+    font-size: 1.1rem;
+  }
+
+  h5 {
+    font-family: 'houschka-pro', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--white);
+    font-size: 1.0rem;
+    }
+
+    h6 {
+      color: var(--white);
+      font-family: 'Noto Serif Display', serif;
+      text-align: center;
+      font-weight: lighter;
+      font-size: 2.5rem;
+    }
+
+  p {
+	font-family: 'houschka-pro', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  }
+
+  /* HEADER */
+
+  header {
+	height: 200px;
+	margin: 0% 7%;
+}
+
+img {
+  width: 100%;
+}
+
+header a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.cart {
+  display: flex;
+  justify-content:  flex-end;
+  padding-right: 5%;
+  padding-top: 1.3%;
+}
+
+.cart a {
+	padding-right: 1%;
+}
+
+.cart span {
+  font-family: houschka-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0% 5%;
+}
+
+.webshop {
+  padding-top: 4%;
+}
+
+.galleri {
+  padding-top: 4%;
+}
+
+.logohead {
+  width: 13rem;
+  z-index: 1;
+  margin-top: -1.5rem;
+}
+
+.om {
+  padding-top: 4%;
+}
+
+.kontakt {
+  padding-top: 4%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: houschka-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.webshop:hover .dropdown-content {display: block;}
+
+/* Show the dropdown menu on hover */
+.galleri:hover .dropdown-content {display: block;}
+
+/* Produktbillede på forsiden */
+.forsidebillede {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tekst over billede */
+.front {
+  position: relative;
+  text-align: center;
+  margin-bottom: -5px;
+}
+
+
+/*Tekst til kollage*/
+
+  .inspiration h4 {
+    color: var(--black);
+    font-family: 'Noto Serif Display', serif;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2.5rem;
+  }
+
+/* Kollage på forsiden til web visning */
+.kollage {
+	display: block;
+}
+
+ /* Citat til forsiden */
+ .citat {
+	background-color: #A1ABC3;
+	text-align: center;
+	color: var(--white);
+	margin-bottom: 50px;
+	margin-top: 40px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+
+  /* MEDIA RULE TIL COMPUTER */
+@media only screen and (min-width: 600px) {
+    #mobil {
+      display: none;
+      }
+
+      .front {
+        width: 100%;
+      }
+
+      .front img {
+        margin: 10%;
+        width: 80%;
+        margin-top: 0;
+      }
+
+      .center {
+        margin: 10% 0 10% 10%;
+        width: 100%;
+        height: 39rem;
+      }
+
+      .center video {
+        width: 100%;
+      }
+
+    h1.nyhed{
+    position: absolute;
+    float: left;
+    top: 22%;
+    left: 18%;
+    font-size: 70px;
+    color: var(--white);
+  }
+
+   h3.kollektion{
+    position: absolute;
+    float: right;
+    font-size: 25px;
+    top: 45%;
+    left: 53%;
+    color: var(--white);
+  }
+
+  .inspiration h4 {
+    margin-top: 10%;
+  }
+
+	h3.inspo{
+		text-align: center;
+		margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 5%;
+	}
+
+/* Knap styles til popup besked til web*/
+/*https://www.w3schools.com/howto/howto_css_button_on_image.asp*/
+ input[type=submit] {
+  padding: 15px 15px;
+  border: none;
+  margin-top: 4%;
+}
+
+input[type=text] {
+	background-color: var(--white);
+  border: none;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+	box-sizing: border-box;
+  border-radius: 0;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/* Knap styles til popupbesked web*/
+/*https://www.w3schools.com/howto/howto_css_button_on_image.asp*/
+ input[type=continue] {
+  padding: 15px 15px;
+  display: inline-block;
+  border: transparent;
+	margin-left: 40%;
+  position: absolute;
+	transform: translate(-200%, -200%);
+	-ms-transform: translate(-50%, -700%);
+	margin-top: -350px;
+	cursor: pointer;
+}
+
+/* Style the submit button */
+input[type=continue] {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+	box-sizing: border-box;
+}
+
+input[type=continue]:hover {
+  opacity: 0.8;
+}
+
+
+/* Popupbesked til forside web*/
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.popup{
+		background-image: url('../images/index/popup.jpg');
+		margin-top: 17%;
+    width: 700px;
+		height: 460px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    display: none;
+}
+
+
+.popup button{
+    display: block;
+    margin:  0 0 0px auto;
+    background-color: transparent;
+    font-size: 60px;
+    color: #F9F9F9;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+}
+
+
+.popup input {
+  display: block;
+}
+
+.popup h1{
+   margin-top: 0px;
+   text-align: left;
+   font-size: 33px;
+   color: #f9f9f9;
+}
+.popup p{
+    font-size: 18px;
+    line-height: 25px;
+		color: #f9f9f9;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.tilmeld input {
+  padding: 0;
+}
+/*tilmeld nyhedsbrev*/
+.mail {
+  padding: 14px;
+  width: 50%;
+}
+
+.semere {
+  top: 56%;
+  left: 62%;
+  position: absolute;
+  padding: 12px;
+  background-color: var(--blue);
+  width: 200px;
+}
+
+.semere a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: houschka-pro, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  font-size: 20px;
+}
+
+
+/* Citat til forsiden */
+.citat {
+  height: 40%;
+  padding: 5%;
+  margin: 0;
+}
+
+  /* fjern til footer */
+	.vesterhavet{
+		display: none;
+	}
+
+	.vesterhavet1{
+		display: none;
+	}
+
+	.vesterhavet2{
+		display: none;
+	}
+
+	.vesterhavet3{
+		display: none;
+	}
+
+
+	/* kolonner til bæredygtighed */
+
+	.container {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+		background-color: #8A9bba;
+		height: 80%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+	}
+
+  .populaer h1 {
+    margin-bottom: 5%;
+  }
+
+	.text {
+	  font-size: 20px;
+		text-align: center;
+    width: 50%;
+    padding: 10%;
+	}
+
+  .image {
+    width: 50%;
+    margin: 0;
+	}
+
+  .image img {
+    width: 100%;
+    height: 600px;
+    margin: 0;
+  }
+
+	/* flexbox til "vores favoritter"*/
+
+  .artikel {
+ 	 overflow: hidden;
+   text-align: center;
+   width: 33.3%
+  }
+
+  .artikel img {
+ 	 width: 350px;
+   height: 400px;
+  }
+	/* FORSIDE - produkter i bunden */
+	/* flexbox til produkterne med knap*/
+	.butikflex {
+		display: flex;
+    margin: 0;
+	}
+
+	.flexbox-container {
+		display: flex;
+	}
+
+	.center {
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}
+
+  .populaer {
+    margin: 7%;
+    margin-top: 5%;
+  }
+
+  #untagelse img {
+    padding: 0;
+  }
+
+  .priser {
+    display: flex;
+    margin-left: 1%;
+  }
+
+
+  .priser a {
+    color: var(--black);
+  	font-family: 'houschka-pro', sans-serif;
+  	font-weight: 500;
+  	font-style: normal;
+    text-decoration: none;
+    flex: auto;
+  }
+
+  .vvase {
+    margin-left: 27%;
+  }
+
+      /* FOOTER */
+
+    footer {
+      background-image: url('../images/baggrund2.jpg');
+      background-repeat: no-repeat;
+      height: 600px;
+    }
+
+    #footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: space-around;
+      margin-left: 12%;
+    }
+
+    .links {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    width: 33%;
+    margin-top: 20rem;
+    }
+
+    .links a {
+    color: var(--white);
+    text-decoration: none;
+    line-height: 2rem;
+  }
+
+    .logofoot {
+    width: 33%;
+    margin-top: 20rem;
+    }
+
+    .billede {
+    width: 15rem;
+    text-align: center;
+    }
+
+    .some {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    width: 33%;
+    margin-top: 20rem;
+    }
+
+    #copyright{
+      padding-top: 5.5%;
+      text-align: center;
+      color: var(--lightgrey);
+      font-size: 0.5rem;
+    }
+}
+
+  /* MEDIA RULE TIL MOBIL */
+@media only screen and (max-width: 600px) {
+
+  #com {
+    display: none;
+    visibility: hidden;
+  }
+
+  /* HEADER */
+  #mobil {
+    display: visible;
+    background-color: var(--white);
+  }
+
+  .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 7%;
+  }
+
+  #menuikon {
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+  }
+
+  .logohead2 {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .cart2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    margin-right: -2%;
+  }
+
+  .cart2 span {
+    font-family: houschka-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: var(--white);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    width: 100%;
+    padding: 5%;
+    margin-top: 10%;
+  }
+
+  .overlay-content a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay .closebtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    margin-right: 2.5rem;
+  }
+
+	.menupunkter {
+		background-color: var(--white);
+		border: none;
+    display: flex;
+    flex-direction: column;
+ 	 }
+
+	.content {
+		display: none;
+		overflow: hidden;
+	}
+
+  .content a {
+      font-family: houschka-pro, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 0.8rem;
+      color: var(--price);
+      margin-left: 5%;
+  }
+
+  .logohead3 {
+    display: flex;
+    justify-content: center;
+    width: 375px;
+    margin-top: 250px;
+  }
+
+  header {
+    height: 120px;
+  }
+  /* SLUT HEADER */
+
+
+     h1.nyhed{
+      position: absolute;
+      float: left;
+     top: 20px;
+     left: 70px;
+      font-size: 30px;
+      color: var(--white);
+    }
+
+     h3.kollektion{
+      position: relative;
+      font-size: 20px;
+     top: 20px;
+      color: var(--black);
+    }
+
+    /* Knap styles til popup besked til web*/
+    /*https://www.w3schools.com/howto/howto_css_button_on_image.asp*/
+     input[type=submit] {
+      padding: 15px 15px;
+      border: none;
+      margin-top: 4%;
+    }
+
+    input[type=text] {
+    	background-color: var(--white);
+      border: none;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+      background-color: var(--blue);
+      color: var(--white);
+      border: none;
+    	box-sizing: border-box;
+    }
+
+    input[type=submit]:hover {
+      opacity: 0.8;
+    }
+
+    /* Knap styles til popupbesked web*/
+    /*https://www.w3schools.com/howto/howto_css_button_on_image.asp*/
+     input[type=continue] {
+      padding: 15px 15px;
+      display: inline-block;
+      border: transparent;
+    	margin-left: 40%;
+      position: absolute;
+    	transform: translate(-200%, -200%);
+    	-ms-transform: translate(-50%, -700%);
+    	margin-top: -350px;
+    	cursor: pointer;
+    }
+
+    /* Style the submit button */
+    input[type=continue] {
+      background-color: var(--blue);
+      color: white;
+      border: none;
+    	box-sizing: border-box;
+    }
+
+    input[type=continue]:hover {
+      opacity: 0.8;
+    }
+
+
+    /* Popupbesked til forside web*/
+    *,
+    *:before,
+    *:after{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .popup{
+    		background-image: url('../images/index/popup.jpg');
+    		margin-top: 0;
+        width: 80%;
+    		height: 58%;
+        padding: 30px 40px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        display: none;
+    }
+
+
+    .popup button{
+        display: block;
+        margin:  0 0 0px auto;
+        background-color: transparent;
+        font-size: 50px;
+        color: #F9F9F9;
+        width: 30px;
+        height: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: block;
+    }
+
+    .popup input {
+      display: block;
+    }
+
+    .popup h1{
+       margin-top: 4%;
+       text-align: left;
+       font-size: 24px;
+       color: #f9f9f9;
+    }
+    .popup p{
+        font-size: 18px;
+        line-height: 18px;
+    		color: #f9f9f9;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .tilmeld input {
+      padding: 0;
+    }
+    /*tilmeld nyhedsbrev*/
+    .mail {
+      padding: 8px;
+      width: 60%;
+    }
+
+    .center {
+      width: 95%;
+      height: 12rem;
+      overflow: hidden;
+    }
+
+    .center video {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .kollektion {
+      height: 90px;
+      padding-top: 4%;
+    }
+
+    .front img {
+      margin: 0;
+      width: 100%;
+    }
+
+    .front {
+      width: 100%;
+      margin: 0;
+    }
+
+    .front h3 {
+      font-size: 18px;
+    }
+
+    .semere {
+      top: 110%;
+      left: 19%;
+      position: absolute;
+      padding: 14px;
+      background-color: var(--blue);
+      width: 200px;
+      margin: 5%;
+    }
+
+    .semere a {
+      text-decoration: none;
+      color: var(--white);
+      font-family: houschka-pro, sans-serif;
+    	font-weight: 500;
+    	font-style: normal;
+      font-size: 18px;
+    }
+
+.citat{
+  margin-top: 160px;
+}
+
+.center {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+     /*kolonner flex ved mobil visning til populærer produkter*/
+     .butikflex{
+	    flex-direction: column;
+		 }
+
+.westerhaw {
+  margin: 7%;
+}
+     /*Kollage med køb nu knap*/
+		 .vesterhavet {
+      display: flex;
+    }
+
+    .vesterhavet img {
+      width: 165px;
+      height: 165px;
+    }
+
+    .vesterhavet1 {
+    display: flex;
+   }
+
+   .vesterhavet1 img {
+     width: 336px;
+   }
+
+   .vesterhavet2 {
+    display: flex;
+   }
+
+   .vesterhavet2 img {
+     width: 165px;
+   }
+
+   .vesterhavet3 {
+    display: flex;
+    width: 300px;
+   }
+
+   .vesterhavet3 img {
+     width: 336px;
+     height: 240px;
+   }
+
+   #bum {
+     margin-left: 2%;
+   }
+
+    /*Fjern webKollage*/
+   .kollage{
+     display: none;
+   }
+   .priser {
+     display: flex;
+     margin-left: 1%;
+   }
+
+
+   .priser a {
+     color: var(--black);
+    font-family: 'houschka-pro', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+     text-decoration: none;
+     flex: auto;
+   }
+
+   .vvase {
+     margin-left: 38%;
+     margin-bottom: 7%;
+   }
+
+   /*Kolonner til bæredygtighed*/
+
+		.container {
+			display: column;
+			align-items: center;
+			justify-content: center;
+			background-color: var(--blue);
+			margin-bottom: 50px;
+			margin-top: 50px;
+		}
+
+		.text {
+			font-size: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			text-align: center;
+			padding-bottom: 50px;
+      padding-top: 50px;
+		}
+
+    .image img {
+      width: 100%;
+    }
+
+    .image {
+      height: 360px;
+    }
+
+  .populaer {
+    margin: 7%;
+  }
+
+  .populaer h1 {
+    margin-bottom: 7%;
+  }
+
+/* FORSIDE - produkter i bunden */
+		/* flexbox til produkterne med knap*/
+		.butikflex{
+			display: block;
+			align-items: center;
+		}
+
+		.flexbox-container {
+			display: flex;
+		}
+
+		.artikel img {
+			width: 100%;
+		}
+
+    p.produkt{
+      text-align: right;
+      margin-top: -6%;
+      margin-bottom: 7%;
+      color: var(--price);
+    }
+
+    .imgtext a {
+      text-decoration: none;
+      color: var(--price);
+      font-family: 'houschka-pro', sans-serif;
+    	font-weight: 500;
+    	font-style: normal;
+    }
+
+
+  /* FOOTER */
+
+  footer {
+    background-image: url('../images/baggrund2.jpg');
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .some {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40%;
+    margin: 5% 30%;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .logofoot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .billede{
+    width: 75%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links a {
+    color: var(--white);
+    text-decoration: none;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  #copyright{
+    margin-top: 14%;
+    color: var(--lightgrey);
+    text-align: center;
+    font-size: 0.5rem;
+  }
+
+}
